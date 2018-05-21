@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Welcome</title>
+    <title>Welcome1</title>
 </head>
 <body>
     Hello!
@@ -20,5 +20,4 @@
     <p>${user.username}</p>
     <p>${user.sex}</p>
 </body>
-<script src="/lib/jquery/dist/jquery.min.js"></script>
 </html>

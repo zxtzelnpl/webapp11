@@ -1,0 +1,20 @@
+{
+  "name": "webapp11",
+  "homepage": "https://github.com/zxtzelnpl/webapp11",
+  "authors": [
+    "zxt_z <zxt_zel_npl@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
