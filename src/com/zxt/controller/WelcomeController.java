@@ -1,4 +1,4 @@
-package com.test.controller;
+package com.zxt.controller;
 
 //通过配置文件
 //import org.springframework.web.servlet.ModelAndView;
@@ -18,7 +18,7 @@ package com.test.controller;
 
 
 //通过注解
-import com.test.entity.User;
+import com.zxt.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

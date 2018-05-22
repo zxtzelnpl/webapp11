@@ -1,6 +1,6 @@
-package com.test.controller;
+package com.zxt.controller;
 
-import com.test.entity.User;
+import com.zxt.entity.User;
 
 import java.math.BigDecimal;
 

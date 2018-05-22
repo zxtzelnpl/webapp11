@@ -1,11 +1,8 @@
-package com.test.controller;
+package com.zxt.controller;
 
-import com.test.entity.User;
+import com.zxt.entity.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import com.alibaba.fastjson.JSON;
 
 import javax.servlet.http.HttpServletResponse;

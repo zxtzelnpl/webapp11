@@ -1,4 +1,4 @@
-package com.test.entity;
+package com.zxt.entity;
 
 import java.math.BigDecimal;
 

@@ -1,16 +1,14 @@
-package com.test.controller;
+package com.zxt.controller;
 
-import com.test.entity.MyBody;
-import com.test.entity.User;
+import com.zxt.entity.MyBody;
+import com.zxt.entity.User;
 
 import java.math.BigDecimal;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class AJAXOne {
