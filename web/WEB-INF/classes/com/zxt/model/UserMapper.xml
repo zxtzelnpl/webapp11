@@ -21,8 +21,8 @@
 
 
     <insert id="insert" parameterType="com.zxt.model.User">
-        insert into test.user (UserName, UserEmail) values (
-        #{UserName}, #{UserEmail}
+        insert into test.user (UserName,UserPassword,userSex,userHome,userInfo, UserEmail) values (
+        #{UserName}, #{UserPassword}, #{userSex}, #{userHome}, #{userInfo}, #{UserEmail}
         )
     </insert>
 

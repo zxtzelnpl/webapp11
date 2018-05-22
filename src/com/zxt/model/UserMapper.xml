@@ -7,6 +7,10 @@
     <resultMap type="com.zxt.model.User" id="usermap">
         <id column="userId" property="userId"/>
         <result column="UserName" property="UserName"/>
+        <result column="UserPassword" property="UserPassword"/>
+        <result column="userSex" property="userSex"/>
+        <result column="userHome" property="userHome"/>
+        <result column="userInfo" property="userInfo"/>
         <result column="UserEmail" property="UserEmail"/>
     </resultMap>
 
@@ -21,8 +25,8 @@
 
 
     <insert id="insert" parameterType="com.zxt.model.User">
-        insert into test.user (UserName, UserEmail) values (
-        #{UserName}, #{UserEmail}
+        insert into test.user (UserName,UserPassword,userSex,userHome,userInfo, UserEmail) values (
+        #{UserName}, #{UserPassword}, #{userSex}, #{userHome}, #{userInfo}, #{UserEmail}
         )
     </insert>
 

@@ -15,7 +15,7 @@ public class UserTest {
     @Test
     public void TestSelectAll() throws IOException {
         //
-        String resource = "D:/www/webapp11/resources/mybatis-config.xml";
+        String resource = "resources/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
                 .build(inputStream);
@@ -40,7 +40,7 @@ public class UserTest {
     @Test
     public void TestSelect() throws IOException {
         //
-        String resource = "/resources/mybatis-config.xml";
+        String resource = "resources/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
                 .build(inputStream);
@@ -48,7 +48,7 @@ public class UserTest {
         SqlSession session = sqlSessionFactory.openSession();
         try {
             User user = (User) session.selectOne(
-                    "com.zxt.model.user.mapper.getUserById", "1");
+                    "com.zxt.model.user.mapper.getUserById", "3");
 
             System.out.print(user);
 
@@ -61,7 +61,7 @@ public class UserTest {
     @Test
     public void TestInsert() throws IOException {
 
-        String resource = "/resources/mybatis-config.xml";
+        String resource = "resources/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
                 .build(inputStream);
@@ -70,9 +70,13 @@ public class UserTest {
         try {
             User user = new User();
             user.setUserName("abc");
+            user.setUserPassword("aaaaa");
+            user.setUserSex("aaaaa");
+            user.setUserHome("aaaaa");
+            user.setUserInfo("aaaaa");
             user.setUserEmail("aaaaa");
 
-            session.update("com.zxt.model.user.mapper", user);
+            session.update("com.zxt.model.user.mapper.insert", user);
 
             session.commit();
 
@@ -85,7 +89,7 @@ public class UserTest {
     @Test
     public void TestUpdate() throws IOException {
 
-        String resource = "/resources/mybatis-config.xml";
+        String resource = "resources/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
                 .build(inputStream);
@@ -93,11 +97,15 @@ public class UserTest {
         SqlSession session = sqlSessionFactory.openSession();
         try {
             User user = new User();
-            user.setUserId(7);
-            user.setUserName("aaaaa");
+            user.setUserId(5);
+            user.setUserName("abc");
+            user.setUserPassword("aaaaa");
+            user.setUserSex("aaaaa");
+            user.setUserHome("aaaaa");
+            user.setUserInfo("aaaaa");
             user.setUserEmail("aaaaa");
 
-            session.update("com.zxt.model.user.mapper", user);
+            session.update("com.zxt.model.user.mapper.update", user);
 
             session.commit();
 
