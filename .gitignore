@@ -30,3 +30,5 @@ gen### Java template
 hs_err_pid*
 
 web/lib/
+src/resources/jdbc.properties
+src/resources/mybatis-config.xml
