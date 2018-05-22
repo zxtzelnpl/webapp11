@@ -1,5 +1,5 @@
 {
-  "directory" : "web/WEB-INF/resources/lib/",
+  "directory" : "web/lib/",
   "json"      : "",
   "endpoint"  : "",
   "searchpath"  : "",

@@ -19,7 +19,8 @@
     <!--if you use annotation you must configure following setting-->
     <mvc:annotation-driven />
 
-    <mvc:resources mapping="/lib/**/*.js" location="/WEB-INF/resources/lib/" />
+    <!--指定静态文件的目录-->
+    <!--<mvc:resources mapping="/lib/**/*.js" location="/WEB-INF/resources/lib/" />-->
 
     <!--通过配置文件的方式-->
     <!--<bean name="/welcome.html" class="com.test.controller.WelcomeController"></bean>-->
